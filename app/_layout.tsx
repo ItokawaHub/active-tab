@@ -5,6 +5,7 @@ export default function Layout() {
     <Stack>
       {/* (tabs)ディレクトリのデフォルトのヘッダーを非表示 */}
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(tabs2)" options={{ headerShown: false }} />
     </Stack>
   );
 }
