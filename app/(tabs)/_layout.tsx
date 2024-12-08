@@ -7,7 +7,18 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'ホーム',
+          headerRight: () => (
+            <FontAwesome 
+              name="plus" 
+              size={24} 
+              color="blue"
+              style={{ marginRight: 15 }}
+              onPress={() => {
+                console.log('ボタンが押されました');
+              }}
+            />
+          ),
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
         }}
       />
