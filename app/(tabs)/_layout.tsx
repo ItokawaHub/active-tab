@@ -28,14 +28,16 @@ export default function TabLayout() {
           title: 'ホーム',
           headerRight: () => (
             <View style={{ flexDirection: 'row', alignItems: 'center', marginRight: 15 }}>
-              <Text style={{ marginRight: 8 }}>
-                {showTabBar ? 'タブを非表示' : 'タブを表示'}
-              </Text>
               <Pressable onPress={toggleTabBar}>
-                <FontAwesome 
-                  name={showTabBar ? 'eye-slash' : 'eye'} 
-                  size={24} 
-                />
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <Text style={{ marginRight: 8 }}>
+                    {showTabBar ? 'タブを非表示' : 'タブを表示'}
+                  </Text>
+                  <FontAwesome 
+                    name={showTabBar ? 'eye-slash' : 'eye'} 
+                    size={24} 
+                  />
+                </View>
               </Pressable>
             </View>
           ),
