@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { Pressable, Text, View } from 'react-native';
 
 export default function TabLayout() {
+  // ここでタブの表示/非表示のステート管理
   const [showTabBar, setShowTabBar] = useState(true);
 
   const toggleTabBar = () => {
+    // ここでタブの表示/非表示の制御
     setShowTabBar(!showTabBar);
   };
 
@@ -16,6 +18,7 @@ export default function TabLayout() {
     <Tabs screenOptions={{
       tabBarActiveTintColor: 'blue',
       tabBarStyle: {
+        // ここでタブの表示/非表示の制御
         display: showTabBar ? 'flex' : 'none'
       }
     }}>
